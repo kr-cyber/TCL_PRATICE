@@ -1,0 +1,53 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : ORCA
+Version: U-2022.12-SP5
+Date   : Fri Sep  5 09:22:56 2025
+****************************************
+
+
+  Startpoint: sdr_clk (clock source 'SDRAM_CLK')
+  Endpoint: sd_DQ[0] (output port clocked by SD_DDR_CLK)
+  Path Group: SD_DDR_CLK
+  Path Type: max
+  Min Clock Paths Derating Factor : 0.900
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock SDRAM_CLK (fall edge)                            3.750      3.750
+  clock source latency                                   0.000      3.750
+  sdr_clk (in)                                           0.000      3.750 f
+  sdr_clk_iopad/CIN (pc3d01)                             0.878 H    4.628 f
+  I_CLOCK_GEN/I_PLL_SD/CLK (PLL)                         1.163 H    5.792 f
+  I_CLOCK_GEN/invbdkG1B1I1_2/ZN (invbdk)                 0.100 &    5.891 r
+  I_CLOCK_GEN/invbdkG1B2I1/ZN (invbdk)                   0.092 &    5.983 f
+  I_CLOCK_GEN/U22/Z (mx02d2)                             0.273 &    6.256 f
+  I_CLOCK_GEN/invbdkG2B1I1_2/ZN (invbdk)                 0.101 &    6.357 r
+  I_CLOCK_GEN/invbdkG2B2I1/ZN (invbdk)                   0.099 &    6.456 f
+  I_CLOCK_GEN/U18/ZN (invbdk)                            0.083 &    6.539 r
+  I_CLOCK_GEN/U15/ZN (invbdk)                            0.090 &    6.630 f
+  I_CLK_SOURCE_SDRAM_CLK/Z (bufbdk)                      0.164 &    6.794 f
+  bufbdaG5B1I6/Z (bufbda)                                0.180 &    6.974 f
+  I_ORCA_TOP/I_SDRAM_IF/buffd7G5B2I36/Z (buffd7)         0.163 &    7.137 f
+  I_ORCA_TOP/I_SDRAM_IF/sd_mux_dq_out_0/Z (mx02d4)       0.543 &    7.680 f
+  sdram_DQ_iopad_0/PAD (pc3b05)                          2.600 H   10.280 f
+  sd_DQ[0] (inout)                                       0.048     10.328 f
+  data arrival time                                                10.328
+
+  clock SD_DDR_CLK (rise edge)                           7.500      7.500
+  clock network delay (propagated)                       4.969     12.469
+  clock reconvergence pessimism                          0.000     12.469
+  output external delay                                 -0.750     11.719
+  data required time                                               11.719
+  ------------------------------------------------------------------------------
+  data required time                                               11.719
+  data arrival time                                               -10.328
+  ------------------------------------------------------------------------------
+  slack (MET)                                                       1.391
+
+
+1
