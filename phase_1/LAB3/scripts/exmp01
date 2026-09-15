@@ -1,0 +1,21 @@
+Information: Building multi voltage information for entire design. (MV-022)
+Error: Generated clock 'SYS_CLK' has no path to its master clock. (PTE-075)
+Error: Generated clock 'SYS_2x_CLK' has no path to its master clock. (PTE-075)
+Error: Generated clock 'PCI_CLK' has no path to its master clock. (PTE-075)
+Error: Generated clock 'SDRAM_CLK' has no path to its master clock. (PTE-075)
+Error: Generated clock 'IO_PCI_CLK' has no path to its master clock. (PTE-075)
+Error: Generated clock 'IO_SDRAM_CLK' has no path to its master clock. (PTE-075)
+Error: Generated clock 'SD_DDR_CLK' has no path to its master clock. (PTE-075)
+Error: Generated clock 'SD_DDR_CLKn' has no path to its master clock. (PTE-075)
+****************************************
+Report : constraint
+	-all_violators
+	-path slack_only
+Design : ORCA
+Version: T-2022.03-SP4
+Date   : Thu Mar 28 11:47:43 2024
+****************************************
+
+This design has no constraints.
+
+1
